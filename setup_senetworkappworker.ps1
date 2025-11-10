@@ -1,3 +1,7 @@
+if (-not (Get-Command ffmpeg -ErrorAction SilentlyContinue)) {
+    winget install --id=Gyan.FFmpeg -e --source=winget
+}
+
 python -m venv venv
 venv\Scripts\activate
 
